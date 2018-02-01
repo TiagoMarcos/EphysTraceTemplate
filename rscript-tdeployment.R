@@ -16,6 +16,11 @@ plot(exp1[], exp1[], axes=FALSE, xlab = "", ylab = "", col="black",type="l") #st
 segments(0.05, mean(exp1[1:1000,])+8, 0.15, mean(exp1[1:1000,])+8, col="black", lwd = 2) #scale bar
 segments(0.05, mean(exp1[1:1000,]+8), 0.05, mean(exp1[1:1000,])+18, col="black", lwd=2)
 
-par(mfrow=c(1,1))
-barplot(exp2[1,1]+exp2[1,2], exp2[2,1]+exp2[2,2], col=c("black", "blue"))
-barplot(exp2[]+exp2[], exp2[]+exp2[], col=c("black", "blue"))
+par(mfrow=c(1,1)) #dependent on number of properties represented
+#graphs with no data points, for datapoints different code lines
+barplot(exp2[1,1]+exp2[1,2], exp2[2,1]+exp2[2,2], col=c("black", "dark green")) #from average spreadsheet,standard colours to be used
+barplot(exp2[]+exp2[], exp2[]+exp2[], col=c("black", "dark green"))
+
+
+
+
